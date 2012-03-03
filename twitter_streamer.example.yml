@@ -1,0 +1,9 @@
+APPS_TOKEN:
+  consumer_key: ''
+  consumer_secret: ''
+USER_TOKEN:
+  oauth_token: ''
+  oauth_token_secret: ''
+MONGODB:
+  host: localhost
+  db: twitter_streamer
