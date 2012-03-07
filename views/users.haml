@@ -1,0 +1,11 @@
+%h1 Watched users
+%ul
+  - @users.all.each do |u|
+    %li
+      = u.name
+      - if running?(u.pid)
+        streamer is running (#{u.pid}) -
+        %a{:href => "/stop/#{u.pid}"}stop
+      - else
+        streamer is not running -
+        %a{:href => "/start/#{u.uid}"}start

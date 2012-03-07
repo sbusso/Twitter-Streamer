@@ -1,3 +1,7 @@
 Starting the daemon:
 
 bundle exec ruby twitter_streamer.rb start
+
+Starting the server
+
+bundle exec ruby app.rb

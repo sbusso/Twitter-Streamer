@@ -1,0 +1,19 @@
+- if current_user
+  %h1
+    Welcome #{current_user.name} !
+  %p
+    - if running?
+      streamer is running (#{current_user.pid}) -
+      %a{:href => '/stop'}stop
+    - else
+      streamer is not running -
+      %a{:href => '/start'}start
+  %ul.tweets
+    - @tweets.each do |tweet|
+      %li= tweet['text']
+
+- else
+  %h1
+    Connect with twitter
+  %p
+    <a href='/auth/twitter'>Sign in with Twitter</a>
