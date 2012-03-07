@@ -1,7 +1,12 @@
-Starting the daemon:
+== Install the gems
 
-bundle exec ruby twitter_streamer.rb start
+bundle install
 
-Starting the server
+== Launch the web app
 
-bundle exec ruby app.rb
+see pow
+
+== launch the pool
+
+ruby lib/twitter_streamer/pool.rb start
+
